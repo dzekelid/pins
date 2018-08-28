@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Lykke
-x-complete: 1
+x-complete: 0
 info:
-  title: Wallet_Api
+  title: Lykke Get API Pinsecurity
   version: 1.0.0
+  description: Get api pinsecurity.
 basePath: /
 schemes:
 - http
@@ -29,21 +31,17 @@ paths:
           description: OK
       tags:
       - Pinsecurity
-    post:
-      summary: Add API Pinsecurity
-      description: Add api pinsecurity.
-      operationId: ApiPinSecurityPost
-      x-api-path-slug: apipinsecurity-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: access token
-      - in: body
-        name: data
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Pinsecurity
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
